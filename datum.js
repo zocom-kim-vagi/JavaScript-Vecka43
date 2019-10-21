@@ -22,10 +22,8 @@ console.log(d.toUTCString());
 var d = new Date("2015-03-25"); // Vårat format
 
 
-
-
-sek1970 = d.getTime(); // millisecond 1970
-
+let sek1970 = d.getTime(); // millisecond 1970
+console.log(sek1970);
 
 
 
@@ -52,12 +50,11 @@ var t = getTime();
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 
-var now = new Date().getTime(); // Millisecunder sen 1970
+var now = new Date().getMonth(); // Millisecunder sen 1970
 console.log(now);
 
 start = new Date("2020-01-01").getTime();
 console.log(start);
-
 
 totaltMilliSec = start - now;
 
