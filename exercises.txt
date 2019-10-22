@@ -15,7 +15,7 @@
 
 7. Gör en Fizz-Buzz funktion*
 
-    * <i>FizzBuzz: Print every number between 1 and 100, However for numbers that are multiples of 3 print "Fizz" and for numbers that are multiples of five print "Buzz."   For numbers that are multiples of both 3 and 5 print "FizzBuzz".</i>
+    * FizzBuzz: Print every number between 1 and 100, However for numbers that are multiples of 3 print "Fizz" and for numbers that are multiples of five print "Buzz."   For numbers that are multiples of both 3 and 5 print "FizzBuzz". 
 
 
 Länkar:
@@ -24,4 +24,6 @@ RegExp = https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 Film Youtubefilm om RegExp: https://youtu.be/909NfO1St0A 
 Online RegExp testare regex101.com: https://regex101.com/
 På mozilla.org web docs om Regexp: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_ExpressionsMDN
+
+
 
