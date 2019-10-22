@@ -1,3 +1,27 @@
+﻿
+Övningar: 
 
-Här kommer alla övningarna att läggas upp
+1. Funktion som räknar ut ditt BMI   /BMI = Vikt kg /  (längd(m)) 2 
+
+2. Gör en function som räknar fram Fibonacci number / max 100 tal
+
+3. Gör en övning som tar fram dagens datum och klocksalg   "21 oktober 2019 kl: 13.30"  
+
+4 Gör en funktion som räknar ner dagar, minuter och sekunder till nyår  Gör en sk. CountDown html sida
+
+5 Switch, Gör en Switch som hämtar vilken veckodag det är. (hint: använd "new Date().getDay()" ) 
+
+6. Övning gör en Array med massa frukter, gör en "for loop" som hämtar alla frukter
+
+7. Gör en Fizz-Buzz funktion*
+
+    * <i>FizzBuzz: Print every number between 1 and 100, However for numbers that are multiples of 3 print "Fizz" and for numbers that are multiples of five print "Buzz."   For numbers that are multiples of both 3 and 5 print "FizzBuzz".</i>
+
+
+Länkar:
+Best practice: exercises: https://www.w3.org/wiki/JavaScript_best_practices#Summary
+RegExp = https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+Film Youtubefilm om RegExp: https://youtu.be/909NfO1St0A 
+Online RegExp testare regex101.com: https://regex101.com/
+På mozilla.org web docs om Regexp: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_ExpressionsMDN
 
