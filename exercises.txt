@@ -18,6 +18,35 @@
     * FizzBuzz: Print every number between 1 and 100, However for numbers that are multiples of 3 print "Fizz" and for numbers that are multiples of five print "Buzz."   For numbers that are multiples of both 3 and 5 print "FizzBuzz". 
 
 
+Exercice LocalStorage
+Gör en sida som…
+● lagrar namn från ett textfält
+● lagrar antal gånger personen besökt sidan
+Welcome [Namn] ! Du har besökt den här sidan [nr] gånger.
+
+
+
+Exercice Cookie
+Testa att skapa en Cookie från en sida som du sedan kan öppna med en function
+● lagrar namn från ett textfält
+● lagrar antal gånger personen besökt sidan
+● Lägg med en “expires date” och en “Path”
+
+
+Extra övningar
+1. Skapa en LocalStorage eller en Cookie med lite mer information.
+Hämta datan och försök rensa den med JavaScript split() methoden.
+Text-datan som hamnar i en Array ska sen läggas in i ett JS-object
+(key),(value)
+
+2. Gör en sida där du kan lägga upp egna “PostIt” lappar.
+Använd HTML, CSS och JavaScript för att skapa snygga lappar.
+
+
+
+
+
+
 Länkar:
 Best practice: exercises: https://www.w3.org/wiki/JavaScript_best_practices#Summary
 RegExp = https://www.w3schools.com/jsref/jsref_obj_regexp.asp
@@ -25,5 +54,11 @@ Film Youtubefilm om RegExp: https://youtu.be/909NfO1St0A
 Online RegExp testare regex101.com: https://regex101.com/
 På mozilla.org web docs om Regexp: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_ExpressionsMDN
 
+Cookies och LocalStorage
 
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+http://html5.silberman.nu/local_storage.html
+https://hacks.mozilla.org/2012/02/saving-images-and-files-in-localstorage/
+https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+och så www.w3schools.com så klart
 
