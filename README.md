@@ -24,6 +24,6 @@ Nytt
 
 - loopar  Switch, for, while
 
-- LocalStorage / webstorage / Coocies
+- LocalStorage / webstorage / cookies
 
 - Location / History 
