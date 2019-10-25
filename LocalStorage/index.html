@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <h2 id="inTxt"></h2>
+
+    <form>
+
+        <input type="text" id="yourName" placeholder="Vad heter du?">        <br>
+        <button type="button" onclick='receiveFormSubmit(document.getElementById("yourName").value)'>Skicka</button>
+    </form>
+
+    <br><br>
+
+    <a href="" onclick="rensaLocalStorage();" style="color:aqua;">Rensa all om mig </a> 
+
+
+
+    <script>
+         
+
+        if (typeof (Storage) !== "undefined") { // Om Local Storage fungerar
+
+                    document.getElementById("yourName").value = localStorage.getItem("namn");
+    
+
+                       var firsTimeVisitors = true;
+
+                        if(!checkNewVisitors()){ // Om inte det är en helt ny besökare
+                            let newNumberVisits = getNrOfVisits();  // Hämtar hur många gånger de har besökt sidan
+                            newNumberVisits ++; // Räknar upp ett besök                         
+                            localStorage.setItem("antVisit", newNumberVisits ); // Lägger till antal besök
+                            firsTimeVisitors = false; // Sätter den globala variabeln till false = det är inte en ny besökare 
+
+                            writeOutHTML_DIV(); // Skriver ut på HTML sidan 
+                            
+                        }
+                       
+                        function receiveFormSubmit(inNyttNamn){ // Om besökatre skickat in sitt namn
+                                // Om det skickas in ett nytt namn
+                               localStorage.setItem("namn", inNyttNamn); // Uppdaterar namn
+                               if(firsTimeVisitors){
+                                    localStorage.setItem("antVisit", "1" );  // Om det är en förstagången besökare sparar vi att de har besökt en gång
+                               }
+                           
+                               writeOutHTML_DIV();
+
+                        } 
+
+                         // Her's the under ordered functions
+
+                        function checkNewVisitors(){  // Kollar om det är en förstagångsbesökar = true, om det är en stammis = false
+                                if(localStorage.getItem("namn") == null){
+                                    return true;
+                                }else{
+                                    return false;
+                                }
+                        }
+                        function getName(){
+                            let namn = localStorage.getItem('namn');  // Hämtar namnet
+                            return namn;
+                        }
+                        function getNrOfVisits(){
+                            antVisit = parseInt(localStorage.getItem('antVisit'));  // Hämtar antal besök och gör om det till number
+                            return antVisit;
+                        }
+                        function writeOutHTML_DIV(){ // Skriver ut HTML 
+                                document.getElementById("inTxt").innerHTML = "Välkommen " + getName() + "<br>Antal gånger du har besökt sidan: " + getNrOfVisits() 
+                        } 
+
+                        function rensaLocalStorage(){  // Rensar localStorage
+                            localStorage.clear();
+                        }
+
+
+
+
+
+                    }
+
+        
+
+        
+ 
+    
+    
+    </script>
+    
+</body>
+</html>
